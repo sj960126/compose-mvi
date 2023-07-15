@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "MVI-Clean-Architecture"
 include ':app'
 include ':data'
+include ':domain'
