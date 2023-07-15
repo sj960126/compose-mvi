@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.data'
+    namespace 'com.toonhub.data'
     compileSdk 33
 
     defaultConfig {
