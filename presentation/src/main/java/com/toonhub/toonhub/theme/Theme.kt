@@ -2,6 +2,7 @@ package com.toonhub.toonhub.theme
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 
 /**
  * @author songhyeonsu
@@ -9,11 +10,14 @@ import androidx.compose.runtime.Composable
  */
 
 @Composable
-fun nHubTheme(
+fun HubTheme(
     content: @Composable () -> Unit
 ) {
-    MaterialTheme(
-        content = content,
-        typography = HubTypography
-    )
+    CompositionLocalProvider {
+        MaterialTheme(
+            content = content,
+            typography = HubTypography
+        )
+    }
 }
+
