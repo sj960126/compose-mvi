@@ -16,3 +16,4 @@ rootProject.name = "toonhub"
 include ':presentation'
 include ':data'
 include ':domain'
+include ':core'
