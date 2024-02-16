@@ -17,24 +17,8 @@ import androidx.compose.ui.unit.dp
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            SetHeaderLayout()
-        }
     }
 
-    @Composable
-    fun SetHeaderLayout(){
-        Row(modifier = Modifier
-            .fillMaxWidth()
-            .wrapContentHeight()
-            .padding(start = 20.dp, end = 20.dp, top = 10.dp, bottom = 0.dp)
-        ){
 
-        }
-    }
 }
 
-@Preview
-@Composable
-private fun ScreenPreview(){
-}
