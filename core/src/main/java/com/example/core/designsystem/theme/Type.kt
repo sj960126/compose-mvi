@@ -23,7 +23,7 @@ data class TypographySystem(
     private val colors: ColorSystem,
     val baseTextStyle: TextStyle = TextStyle(
         color = colors.primary,
-        fontFamily = SearchGrotesk
+        fontFamily = fontSet
     ),
     val h1: TextStyle = baseTextStyle.copy(
         fontWeight = FontWeight.SemiBold,
@@ -67,13 +67,14 @@ data class TypographySystem(
         letterSpacing = 0.sp
     ),
     val button: TextStyle = baseTextStyle.copy(
+        color = colors.white,
         fontWeight = FontWeight.SemiBold,
         fontSize = 24.sp,
         letterSpacing = 1.25.sp
     )
 )
 
-private val SearchGrotesk = FontFamily(
+private val fontSet = FontFamily(
     Font(R.font.nanum_gothic_extra_bold, FontWeight.W700),
     Font(R.font.nanum_gothic_bold, FontWeight.W600),
     Font(R.font.nanum_gothic_light, FontWeight.W200),

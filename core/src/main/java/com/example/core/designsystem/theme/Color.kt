@@ -21,7 +21,9 @@ data class ColorSystem(
     val gray06 : Color,
     val gray07 : Color,
     val gray08 : Color,
-    val gray09 : Color
+    val gray09 : Color,
+    val white :Color,
+    val black : Color
 )
 
 val lightSearchColors: ColorSystem = ColorSystem(
@@ -36,7 +38,9 @@ val lightSearchColors: ColorSystem = ColorSystem(
     gray06 = Color(0xFFCED3D6),
     gray07 = Color(0xFFE1E4E6),
     gray08 = Color(0xFFF2F4F5),
-    gray09 = Color(0xFFFAFAFA)
+    gray09 = Color(0xFFFAFAFA),
+    white = Color(0xFFFFFFFF),
+    black = Color(0xFF000000)
 )
 
 val darkSearchColors: ColorSystem = ColorSystem(
@@ -51,5 +55,7 @@ val darkSearchColors: ColorSystem = ColorSystem(
     gray06 = Color(0xFF878D91),
     gray07 = Color(0xff7f7f82),
     gray08 = Color(0xFF363A3C),
-    gray09 = Color(0xFF24262a)
+    gray09 = Color(0xFF24262a),
+    white = Color(0xFFFFFFFF),
+    black = Color(0xFF000000)
 )
