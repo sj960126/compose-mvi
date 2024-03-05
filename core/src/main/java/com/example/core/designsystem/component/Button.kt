@@ -1,6 +1,7 @@
 package com.example.core.designsystem.component
 
 import android.util.Log
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -70,7 +71,7 @@ private fun DefaultButtonContent(
 fun ButtonPreview(){
     HubTheme {
         DefaultButton(
-            enabled = true,
+            enabled = false ,
             onClick = { Log.d("디버그","onCLick") },
             contentPadding = PaddingValues(15.dp)
         ) {
